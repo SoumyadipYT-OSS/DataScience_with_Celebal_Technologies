@@ -1,0 +1,56 @@
+{
+    "tata_technologies_warehouse": {
+        "tunig-machines": [
+            {
+                "id": "TT001",
+                "type": "Automated Guided Vehicle",
+                "power_consumption": {
+                    "unit": "kWh",
+                    "average_daily_use": 40
+                }
+            },
+            {
+                "id": "TT002",
+                "type": "Sorting System",
+                "power_consumption": {
+                    "unit": "kWh",
+                    "average_daily_use": 60
+                }
+            },
+            {
+                "id": "TT003",
+                "type": "Robotic Arm",
+                "power_consumption": {
+                    "unit": "kWh",
+                    "average_daily_use": 30
+                }
+            }
+        ],
+        "electric-machines": [
+            {
+                "id": "EW001",
+                "type": "Conveyor System",
+                "power_consumption": {
+                    "unit": "kWh",
+                    "average_daily_use": 120
+                }
+            },
+            {
+                "id": "EW002",
+                "type": "Packaging Machine",
+                "power_consumption": {
+                    "unit": "kWh",
+                    "average_daily_use": 80
+                }
+            },
+            {
+                "id": "EW003",
+                "type": "HVAC System",
+                "power_consumption": {
+                    "unit": "kWh",
+                    "average_daily_use": 200
+                }
+            }
+        ]
+    }
+}
