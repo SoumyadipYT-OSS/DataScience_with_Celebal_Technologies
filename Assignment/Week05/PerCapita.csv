@@ -1,0 +1,121 @@
+Country,Population,GDP,Continent,Age,Major/Minor,Category
+Brazil,212559417,448.12,Asia,,Major,C
+Germany,83783942,2875.14,South America,35,Minor,B
+Germany,,3845.63,South America,29,Major,C
+USA,331002651,2875.14,North America,,Major,A
+India,83783942,448.12,Asia,,Major,C
+Nigeria,83783942,,Europe,,Minor,C
+Nigeria,,2875.14,North America,,Minor,A
+Germany,1380004385,,Africa,,Minor,D
+USA,,2875.14,South America,,Minor,B
+Germany,212559417,448.12,Asia,,Major,D
+Germany,212559417,21433.23,Asia,,Minor,D
+USA,83783942,448.12,South America,,Minor,D
+Brazil,,448.12,Africa,,Minor,A
+India,1380004385,,Africa,42,Major,A
+USA,,,Asia,,Minor,D
+Germany,212559417,2875.14,Asia,,Minor,D
+Nigeria,,2875.14,Africa,35,Minor,D
+India,,,Europe,35,Major,A
+USA,,448.12,South America,,Major,D
+Germany,,,South America,29,Major,A
+Germany,1380004385,448.12,South America,42,Major,C
+Brazil,,,Africa,,Minor,C
+Nigeria,1380004385,21433.23,Europe,,Minor,B
+Nigeria,,3845.63,Europe,35,Major,B
+USA,,3845.63,Asia,29,Major,C
+Germany,331002651,2875.14,South America,29,Major,D
+USA,,3845.63,Asia,42,Minor,D
+Brazil,331002651,,South America,,Major,B
+India,1380004385,,South America,35,Major,B
+Brazil,331002651,2875.14,Africa,29,Minor,B
+USA,83783942,21433.23,South America,42,Major,C
+Germany,,2875.14,North America,,Minor,B
+Nigeria,1380004385,3845.63,Asia,35,Minor,D
+Brazil,212559417,,Europe,,Minor,D
+Nigeria,83783942,,Africa,35,Minor,B
+Brazil,331002651,2875.14,South America,,Minor,D
+Nigeria,331002651,3845.63,Asia,35,Minor,C
+Brazil,212559417,21433.23,Africa,35,Minor,C
+USA,331002651,21433.23,North America,,Minor,C
+Nigeria,212559417,448.12,Asia,,Minor,D
+Germany,,3845.63,Asia,29,Major,A
+Germany,212559417,21433.23,Europe,35,Major,A
+Nigeria,1380004385,2875.14,Africa,29,Major,A
+USA,,,Europe,,Major,C
+USA,331002651,2875.14,Asia,35,Major,C
+India,,21433.23,Europe,,Minor,B
+India,331002651,448.12,Africa,29,Major,B
+India,83783942,448.12,South America,42,Major,A
+Germany,83783942,448.12,Europe,42,Minor,B
+India,331002651,,Africa,35,Minor,B
+Nigeria,,2875.14,South America,,Major,A
+Brazil,212559417,448.12,North America,,Minor,D
+USA,212559417,2875.14,North America,,Minor,C
+India,212559417,448.12,Asia,35,Major,B
+USA,331002651,21433.23,Europe,42,Minor,D
+India,331002651,,Africa,,Minor,D
+Germany,83783942,3845.63,Asia,,Major,B
+Brazil,212559417,,Africa,,Minor,B
+Brazil,,3845.63,North America,29,Minor,A
+India,331002651,3845.63,Africa,,Minor,D
+USA,,,Europe,29,Minor,A
+Germany,1380004385,3845.63,Africa,35,Minor,A
+India,1380004385,2875.14,Asia,29,Minor,C
+Germany,212559417,2875.14,Europe,42,Major,B
+Brazil,212559417,,North America,,Major,A
+Germany,,2875.14,Africa,35,Minor,A
+India,212559417,448.12,Africa,42,Minor,C
+Nigeria,1380004385,2875.14,South America,35,Minor,B
+Germany,1380004385,21433.23,North America,,Minor,B
+Nigeria,1380004385,21433.23,South America,,Major,A
+Nigeria,83783942,21433.23,Europe,,Major,D
+USA,212559417,2875.14,North America,29,Major,D
+USA,83783942,21433.23,Africa,29,Major,A
+USA,331002651,448.12,Europe,,Major,D
+USA,331002651,448.12,North America,,Major,A
+USA,83783942,3845.63,North America,,Minor,B
+USA,212559417,3845.63,Asia,35,Major,B
+India,212559417,3845.63,Asia,35,Minor,D
+Germany,,,Europe,35,Major,B
+Germany,331002651,,Asia,,Minor,B
+Brazil,1380004385,,Asia,29,Major,D
+India,331002651,3845.63,Africa,,Minor,D
+Brazil,331002651,3845.63,North America,,Minor,D
+Germany,331002651,2875.14,Europe,,Major,C
+Nigeria,212559417,448.12,Africa,29,Minor,B
+India,212559417,,South America,,Major,D
+Germany,,3845.63,North America,,Minor,C
+Nigeria,212559417,448.12,Asia,29,Major,B
+Brazil,331002651,2875.14,North America,35,Major,A
+India,,448.12,North America,,Major,C
+Brazil,1380004385,21433.23,South America,,Minor,A
+Nigeria,212559417,,Asia,35,Minor,A
+Brazil,212559417,,North America,35,Major,C
+Germany,212559417,3845.63,South America,,Major,A
+USA,331002651,448.12,Europe,35,Minor,B
+Nigeria,331002651,3845.63,North America,,Minor,C
+India,1380004385,448.12,North America,42,Major,B
+Germany,212559417,3845.63,Europe,35,Minor,B
+Brazil,83783942,,North America,,Major,D
+Nigeria,331002651,3845.63,Africa,35,Major,B
+India,331002651,3845.63,Asia,,Major,B
+Brazil,83783942,3845.63,North America,,Major,B
+Germany,331002651,3845.63,Asia,42,Minor,A
+Germany,,2875.14,Europe,,Major,C
+USA,83783942,21433.23,South America,,Minor,C
+Brazil,212559417,448.12,Europe,42,Major,B
+USA,1380004385,3845.63,Asia,,Minor,C
+Germany,331002651,3845.63,Africa,,Major,C
+Nigeria,,,Asia,,Major,A
+Germany,83783942,448.12,Europe,,Major,D
+Nigeria,,3845.63,Africa,29,Minor,C
+USA,212559417,21433.23,Europe,35,Major,A
+Brazil,,448.12,South America,,Minor,A
+Germany,83783942,,North America,,Minor,B
+India,331002651,21433.23,North America,29,Major,B
+Brazil,1380004385,3845.63,Asia,,Minor,B
+Nigeria,,3845.63,North America,42,Major,C
+Brazil,,448.12,Asia,35,Minor,A
+Germany,212559417,3845.63,Africa,,Major,A
+Germany,331002651,,South America,42,Minor,B
