@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("my_ConversationalModel")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+ce792ed414581f04ce1ea46a8dc7cf40fd769932")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+cabdc5343728992a30f33a7b77ab347d588a6599")]
 [assembly: System.Reflection.AssemblyProductAttribute("my_ConversationalModel")]
 [assembly: System.Reflection.AssemblyTitleAttribute("my_ConversationalModel")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
