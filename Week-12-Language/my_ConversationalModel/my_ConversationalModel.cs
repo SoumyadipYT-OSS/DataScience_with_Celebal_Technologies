@@ -12,7 +12,7 @@ public class my_ConversationalModel {
 
     private Dictionary<string, List<string>> synonyms = new Dictionary<string, List<string>> {
         { "hello", new List<string> { "hi", "hey", "greetings" } },
-        { "how are you", new List<string> { "how's it going", "how do you do" } },
+        { "how are you", new List<string> { "how's it going", "how do you do", "what's up" } },
         { "what is your name", new List<string> { "who are you", "your name" } }
     };
 
