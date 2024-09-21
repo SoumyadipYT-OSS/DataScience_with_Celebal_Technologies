@@ -6,7 +6,7 @@ public class my_ConversationalModel {
     private Dictionary<string, string> responses = new Dictionary<string, string> {
         { "hello", "Hi there!" },
         { "how are you", "I'm doing well, thank you!" },
-        { "what is your name", "I'm a conversational model." },
+        { "what is your name", "I'm a conversational model. My name is Survi" },
         { "tell me a joke", "Why don't scientists trust atoms? Because they make up everything!" },
         { "my name is", "Nice to meet you!" },
         { "happy", "I'm glad to hear that!" },
@@ -14,13 +14,19 @@ public class my_ConversationalModel {
         { "goodbye", "Goodbye! Have a great day!" },
         { "help", "I can assist you with various tasks. Feel free to ask me anything!" },
         { "thanks", "You're welcome!" },    
+        { "who developed you", "I am Survi conversational model. I am developed by Majumder industries."}
     };
 
     private Dictionary<string, List<string>> synonyms = new Dictionary<string, List<string>> {
         { "hello", new List<string> { "hi", "hey", "greetings" } },
         { "how are you", new List<string> { "how's it going", "how do you do", "what's up" } },
         { "what is your name", new List<string> { "who are you", "your name" } },
-        { "calculator", new List<string> { "calc", "math", "compute" } }
+        { "calculator", new List<string> { "calc", "math", "compute" } },
+        { "developed", new List<string> { "created", "built", "made" } },
+        { "thanks", new List<string> { "thank you", "appreciate it", "grateful" } },
+        { "goodbye", new List<string> { "bye", "farewell", "see you later" } },
+        { "help", new List<string> { "assist", "support", "guide" } },
+        { "who developed you", new List<string> { "who created you", "who built you", "who made you" } }
     };
 
     private Dictionary<string, string> context = new Dictionary<string, string>();
@@ -29,13 +35,10 @@ public class my_ConversationalModel {
     public string GetResponse(string input) {
         input = Normalize(input);
         string response = PatternMatching(input);
-        if (response == null && input.Contains("calculator"))
-        {
+        if (response == null && input.Contains("calculator")) {
             response = "Calculator mode activated. Do you want to continue? (Y/N)";
             context["mode"] = "calculator";
-        }
-        else if (context.ContainsKey("mode") && context["mode"] == "calculator")
-        {
+        } else if (context.ContainsKey("mode") && context["mode"] == "calculator") {
             response = HandleCalculator(input);
         }
         return response ?? "I don't understand that.";
@@ -105,23 +108,18 @@ public class my_ConversationalModel {
 
     // Fetching the Calculator.cs file and its methods for operations
     private string HandleCalculator(string input) {
-        if (input == "n")
-        {
+        if (input == "n") {
             context.Remove("mode");
             return "Exiting calculator mode.";
-        }
-        else if (input == "y")
-        {
+        } else if (input == "y") {
             return "Enter two numbers followed by the operation (+, -, *, /, root, square, cube):";
-        }
-        else
-        {
+        } else {
             var parts = input.Split(' ');
-            if (parts.Length == 3)
-            {
+            if (parts.Length == 3) {
                 double num1 = double.Parse(parts[0]);
                 double num2 = double.Parse(parts[1]);
                 string operation = parts[2];
+                
                 double result = operation switch {
                     "+" => cal.Add(num1, num2),
                     "-" => cal.Subtract(num1, num2),
