@@ -8,6 +8,8 @@ public class my_ConversationalModel {
         { "how are you", "I'm doing well, thank you!" },
         { "what is your name", "I'm a conversational model." },
         { "tell me a joke", "Why don't scientists trust atoms? Because they make up everything!" }
+        // responses for calculator operations
+
     };
 
     private Dictionary<string, List<string>> synonyms = new Dictionary<string, List<string>> {
@@ -84,4 +86,33 @@ public class my_ConversationalModel {
         return null;
 #pragma warning restore CS8603
     }
+
+
+    // Handling Calculator.cs
+    // method named 'Calculate' where in the Dictionary<string, Func<double, double, double>> operations
+    // is defined to store the operation name and the corresponding function to be executed.
+    // Fetching the Calculator class from the Calculator.cs file and using the methods defined in it.
+
+    public string my_ConversationalModel.Calculator(string input) {
+        var calculator = new Calculator();
+        var operations = new Dictionary<string, Func<double, double, double>> {
+            { "add", calculator.Add },
+            { "subtract", calculator.Subtract },
+            { "multiply", calculator.Multiply },
+            { "divide", calculator.Divide },
+            { "modulo", calculator.Modulo },
+            { "power", calculator.Power }
+        };
+
+        foreach (var operation in operations) {
+            if (Regex.IsMatch(input, $@"\b{operation.Key}\b")) {
+                var match = Regex.Match(input, $@"\b{operation.Key}\b");
+                var numbers = Regex.Matches(input, @"\d+(\.\d+)?");
+                var args = new List<double>();
+                foreach (Match number in numbers) {
+                    args.Add(double.Parse(number.Value));
+                }
+                return operation.Value.DynamicInvoke(args.ToArray()).ToString();
+            }
+        }
 }
