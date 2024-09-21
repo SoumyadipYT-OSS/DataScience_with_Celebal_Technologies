@@ -2,7 +2,7 @@
 #### Task: *Sentiment Analysis on Movie review using Azure Cloud, Language Studio*
 ##### <span style="color:darkblue">**Unmute the video for better experience**</span>
 
-#### <span style="color🔶">*Here is my Sentiment Analysis on Mission Impossible (Tom Cruise) movie review*</span>
+#### <span style="color:orange">*Here is my Sentiment Analysis on Mission Impossible (Tom Cruise) movie review*</span>
 https://github.com/user-attachments/assets/95821f44-9bc6-4286-aa26-f2fbdbc43966
 
 ##### **Azure Language Studio**
