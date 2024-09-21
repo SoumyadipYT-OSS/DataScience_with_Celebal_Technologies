@@ -7,22 +7,37 @@ public class my_ConversationalModel {
         { "hello", "Hi there!" },
         { "how are you", "I'm doing well, thank you!" },
         { "what is your name", "I'm a conversational model." },
-        { "tell me a joke", "Why don't scientists trust atoms? Because they make up everything!" }
-        // responses for calculator operations
-
+        { "tell me a joke", "Why don't scientists trust atoms? Because they make up everything!" },
+        { "my name is", "Nice to meet you!" },
+        { "happy", "I'm glad to hear that!" },
+        { "sad", "I'm sorry to hear that. I hope things get better soon." },
+        { "goodbye", "Goodbye! Have a great day!" },
+        { "help", "I can assist you with various tasks. Feel free to ask me anything!" },
+        { "thanks", "You're welcome!" },    
     };
 
     private Dictionary<string, List<string>> synonyms = new Dictionary<string, List<string>> {
         { "hello", new List<string> { "hi", "hey", "greetings" } },
         { "how are you", new List<string> { "how's it going", "how do you do", "what's up" } },
-        { "what is your name", new List<string> { "who are you", "your name" } }
+        { "what is your name", new List<string> { "who are you", "your name" } },
+        { "calculator", new List<string> { "calc", "math", "compute" } }
     };
 
     private Dictionary<string, string> context = new Dictionary<string, string>();
+    private Calculator cal = new Calculator();
 
     public string GetResponse(string input) {
         input = Normalize(input);
         string response = PatternMatching(input);
+        if (response == null && input.Contains("calculator"))
+        {
+            response = "Calculator mode activated. Do you want to continue? (Y/N)";
+            context["mode"] = "calculator";
+        }
+        else if (context.ContainsKey("mode") && context["mode"] == "calculator")
+        {
+            response = HandleCalculator(input);
+        }
         return response ?? "I don't understand that.";
     }
 
@@ -88,31 +103,38 @@ public class my_ConversationalModel {
     }
 
 
-    // Handling Calculator.cs
-    // method named 'Calculate' where in the Dictionary<string, Func<double, double, double>> operations
-    // is defined to store the operation name and the corresponding function to be executed.
-    // Fetching the Calculator class from the Calculator.cs file and using the methods defined in it.
-
-    public string my_ConversationalModel.Calculator(string input) {
-        var calculator = new Calculator();
-        var operations = new Dictionary<string, Func<double, double, double>> {
-            { "add", calculator.Add },
-            { "subtract", calculator.Subtract },
-            { "multiply", calculator.Multiply },
-            { "divide", calculator.Divide },
-            { "modulo", calculator.Modulo },
-            { "power", calculator.Power }
-        };
-
-        foreach (var operation in operations) {
-            if (Regex.IsMatch(input, $@"\b{operation.Key}\b")) {
-                var match = Regex.Match(input, $@"\b{operation.Key}\b");
-                var numbers = Regex.Matches(input, @"\d+(\.\d+)?");
-                var args = new List<double>();
-                foreach (Match number in numbers) {
-                    args.Add(double.Parse(number.Value));
-                }
-                return operation.Value.DynamicInvoke(args.ToArray()).ToString();
-            }
+    // Fetching the Calculator.cs file and its methods for operations
+    private string HandleCalculator(string input) {
+        if (input == "n")
+        {
+            context.Remove("mode");
+            return "Exiting calculator mode.";
         }
+        else if (input == "y")
+        {
+            return "Enter two numbers followed by the operation (+, -, *, /, root, square, cube):";
+        }
+        else
+        {
+            var parts = input.Split(' ');
+            if (parts.Length == 3)
+            {
+                double num1 = double.Parse(parts[0]);
+                double num2 = double.Parse(parts[1]);
+                string operation = parts[2];
+                double result = operation switch {
+                    "+" => cal.Add(num1, num2),
+                    "-" => cal.Subtract(num1, num2),
+                    "*" => cal.Multiply(num1, num2),
+                    "/" => cal.Divide(num1, num2),
+                    "root" => cal.SquareRoot(num1),
+                    "square" => cal.Power(num1, num2),
+                    "%" => cal.Modulo(num1, num2),
+                    _ => throw new InvalidOperationException("Invalid operation")
+                };
+                return $"The result is: {result}. Continue? (Y/N)";
+            }
+            return "Invalid input. Please enter two numbers followed by the operation.";
+        }
+    }
 }
