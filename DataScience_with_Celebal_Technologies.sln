@@ -1,0 +1,30 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.5.002.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Week-12-Language", "Week-12-Language", "{BD7F8208-BF6D-45FA-B1E1-CDCBD28BBAC6}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ConversationalAI", "Week-12-Language\ConversationalAI\ConversationalAI.csproj", "{CBE14901-015B-4DE3-A0E3-EE93A3F3C396}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{CBE14901-015B-4DE3-A0E3-EE93A3F3C396}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CBE14901-015B-4DE3-A0E3-EE93A3F3C396}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CBE14901-015B-4DE3-A0E3-EE93A3F3C396}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CBE14901-015B-4DE3-A0E3-EE93A3F3C396}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{CBE14901-015B-4DE3-A0E3-EE93A3F3C396} = {BD7F8208-BF6D-45FA-B1E1-CDCBD28BBAC6}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {0BB59423-F3CC-441D-9E27-340DA6BD5A53}
+	EndGlobalSection
+EndGlobal

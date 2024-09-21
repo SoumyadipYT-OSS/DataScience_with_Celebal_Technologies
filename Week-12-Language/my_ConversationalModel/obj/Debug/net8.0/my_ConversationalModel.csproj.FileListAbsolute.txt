@@ -1,0 +1,15 @@
+/workspaces/DataScience_with_Celebal_Technologies/Week-12-Language/my_ConversationalModel/bin/Debug/net8.0/my_ConversationalModel
+/workspaces/DataScience_with_Celebal_Technologies/Week-12-Language/my_ConversationalModel/bin/Debug/net8.0/my_ConversationalModel.deps.json
+/workspaces/DataScience_with_Celebal_Technologies/Week-12-Language/my_ConversationalModel/bin/Debug/net8.0/my_ConversationalModel.runtimeconfig.json
+/workspaces/DataScience_with_Celebal_Technologies/Week-12-Language/my_ConversationalModel/bin/Debug/net8.0/my_ConversationalModel.dll
+/workspaces/DataScience_with_Celebal_Technologies/Week-12-Language/my_ConversationalModel/bin/Debug/net8.0/my_ConversationalModel.pdb
+/workspaces/DataScience_with_Celebal_Technologies/Week-12-Language/my_ConversationalModel/obj/Debug/net8.0/my_ConversationalModel.GeneratedMSBuildEditorConfig.editorconfig
+/workspaces/DataScience_with_Celebal_Technologies/Week-12-Language/my_ConversationalModel/obj/Debug/net8.0/my_ConversationalModel.AssemblyInfoInputs.cache
+/workspaces/DataScience_with_Celebal_Technologies/Week-12-Language/my_ConversationalModel/obj/Debug/net8.0/my_ConversationalModel.AssemblyInfo.cs
+/workspaces/DataScience_with_Celebal_Technologies/Week-12-Language/my_ConversationalModel/obj/Debug/net8.0/my_ConversationalModel.csproj.CoreCompileInputs.cache
+/workspaces/DataScience_with_Celebal_Technologies/Week-12-Language/my_ConversationalModel/obj/Debug/net8.0/my_ConversationalModel.sourcelink.json
+/workspaces/DataScience_with_Celebal_Technologies/Week-12-Language/my_ConversationalModel/obj/Debug/net8.0/my_ConversationalModel.dll
+/workspaces/DataScience_with_Celebal_Technologies/Week-12-Language/my_ConversationalModel/obj/Debug/net8.0/refint/my_ConversationalModel.dll
+/workspaces/DataScience_with_Celebal_Technologies/Week-12-Language/my_ConversationalModel/obj/Debug/net8.0/my_ConversationalModel.pdb
+/workspaces/DataScience_with_Celebal_Technologies/Week-12-Language/my_ConversationalModel/obj/Debug/net8.0/my_ConversationalModel.genruntimeconfig.cache
+/workspaces/DataScience_with_Celebal_Technologies/Week-12-Language/my_ConversationalModel/obj/Debug/net8.0/ref/my_ConversationalModel.dll
