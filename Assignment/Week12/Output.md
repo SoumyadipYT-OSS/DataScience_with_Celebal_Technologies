@@ -19,3 +19,7 @@ https://github.com/user-attachments/assets/95821f44-9bc6-4286-aa26-f2fbdbc43966
 
 #### **Review**
 ![Screenshot 2024-09-22 025614](https://github.com/user-attachments/assets/d0c497f6-3f25-4229-991f-c599839a2186)
+
+
+#### **Azure Terminal workflow**
+![Screenshot 2024-09-22 022918](https://github.com/user-attachments/assets/501752af-a6bd-48ea-b443-0cb4fcc9c114)
