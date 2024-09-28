@@ -35,8 +35,3 @@ if uploaded_file is not None:
             st.write(res)
         except:
             st.write
-        if response:
-            st.write("Unrecognized query. Please entery query again.")
-        else:
-            st.write("Query not recognized. Please enter 'length', 'columns', or 'summary'.")
-            
