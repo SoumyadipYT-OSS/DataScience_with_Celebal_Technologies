@@ -3,17 +3,6 @@ import re
 class ConversationalModel:
     def __init__(self):
         self.responses = {
-            "hello": "Hi there!",
-            "how are you": "I'm doing well, thank you!",
-            "what is your name": "I'm a conversational model. My name is Survi",
-            "tell me a joke": "Why don't scientists trust atoms? Because they make up everything!",
-            "my name is": "Nice to meet you!",
-            "happy": "I'm glad to hear that!",
-            "sad": "I'm sorry to hear that. I hope things get better soon.",
-            "goodbye": "Goodbye! Have a great day!",
-            "help": "I can assist you with various tasks. Feel free to ask me anything!",
-            "thanks": "You're welcome!",
-            "who developed you": "I am Survi conversational model. I am developed by Majumder industries.",
             "length": "len(data)",
             "rows": "len(data)",
             "columns": "len(data.columns)",
@@ -66,15 +55,6 @@ class ConversationalModel:
         }
 
         self.synonyms = {
-            "hello": ["hi", "hey", "greetings"],
-            "how are you": ["how's it going", "how do you do", "what's up"],
-            "what is your name": ["who are you", "your name"],
-            "calculator": ["calc", "math", "compute"],
-            "developed": ["created", "built", "made"],
-            "thanks": ["thank you", "appreciate it", "grateful"],
-            "goodbye": ["bye", "farewell", "see you later"],
-            "help": ["assist", "support", "guide"],
-            "who developed you": ["who created you", "who built you", "who made you"],
             "length": ["lenght of the dataset", "total length of the dataset", "len", "what is the len of the dataset", "what is the lenght of this dataset"],
             "rows": ["number of rows", "total number of rows", "row count", "how many rows are there", "how many rows"],
             "column": ["number of columns", "total number of columns", "column count", "how many columns are there", "how many columns"],
